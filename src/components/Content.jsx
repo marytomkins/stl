@@ -9,11 +9,12 @@ const Content = () => {
     <Router>
       <div className="App h-100vh flex flex-col">
         <Header />
-        <div className="main-content grow"> 
+        <div className="main-content grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/inventory" element={<Inventory />} />
-            <Route path="/toolbox" element={<></>} />
+            <Route path="/steel-properties" element={<></>} />
+            <Route path="/unit-converter" element={<></>} />
           </Routes>
         </div>
         <Footer />
