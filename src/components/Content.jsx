@@ -3,20 +3,21 @@ import Footer from "./Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Inventory from "./Inventory";
+import Properties from "./Properties";
 
 const Content = () => {
   return (
     <Router>
-      <div className="App h-100vh flex flex-col">
+      <div className="App min-h-screen flex flex-col">
         <Header />
-        <div className="main-content grow">
+        <main className="main-content flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/inventory" element={<Inventory />} />
-            <Route path="/steel-properties" element={<></>} />
+            <Route path="/steel-properties" element={<Properties/>} />
             <Route path="/unit-converter" element={<></>} />
           </Routes>
-        </div>
+        </main>
         <Footer />
       </div>
     </Router>

@@ -1,6 +1,3 @@
-import Header from "./Header";
-import Footer from "./Footer";
-
 const Home = () => {
   return (
     <div className="home-content flex-1 flex flex-col items-center text-center">

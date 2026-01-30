@@ -36,12 +36,14 @@ const Header = () => {
               <Link
                 to="/steel-properties"
                 className="block px-4 py-2 hover:bg-gray-100"
+                onClick={() => setDropdownOpen(false)}
               >
                 Steel Properties
               </Link>
               <Link
                 to="/unit-converter"
                 className="block px-4 py-2 hover:bg-gray-100"
+                onClick={() => setDropdownOpen(false)}
               >
                 Unit Converter
               </Link>
